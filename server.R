@@ -1,6 +1,6 @@
 server <- function(input, output, session) {
   ## Temporary Credentials ----
-  cred <- read.csv("cred.csv")
+  cred <- read.csv("data/credentials/cred.csv")
   users <- as.data.frame(cred)
   
   ## Login Set Value ----

@@ -2,7 +2,7 @@
 source('global.R')
 
 # * Load functions ----
-source('functions.R')
+source('functions/greetings.R')
 
 # * Load UI ----
 source('ui.R')
