@@ -1,4 +1,4 @@
-# ✅ R-Shiny-Login
+# ✅ R-Shiny-Login-Template
 
 R Shiny App template with Login functionality
 
