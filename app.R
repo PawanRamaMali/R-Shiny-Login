@@ -1,0 +1,14 @@
+# * Load libraries ----
+source('global.R')
+
+# * Load functions ----
+source('functions.R')
+
+# * Load UI ----
+source('ui.R')
+
+# * Load Server ----
+source('server.R')
+
+# Run App ----
+shinyApp(ui = ui, server = server)
