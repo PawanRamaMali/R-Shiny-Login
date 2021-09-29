@@ -6,9 +6,11 @@ R Shiny App template with Login functionality
 
 To jumpstart the application development process, I can use this template to start working on the core functionality. 
 
+
 ### Contents 
 
 This repository contains files to run the R Shiny App which has login functionality
+
 
 ### Features 
 
@@ -19,6 +21,7 @@ This repository contains files to run the R Shiny App which has login functional
 * The UI interface is modularized in components for code simplicity 
 * The `app.R` shows the order of code execution and launched the app
 
+
 ### How to Install 
 
 * Download the code files
@@ -27,6 +30,7 @@ This repository contains files to run the R Shiny App which has login functional
 git clone https://github.com/PawanRamaMali/R-Shiny-Login.git 
 
 ```
+
 
 ### How to Run
 
@@ -44,6 +48,7 @@ Shiny is an R package that makes it easy to build interactive web apps straight 
 
 ---
 </details>
+
 
 ## Contributing
 
