@@ -80,7 +80,7 @@ observe({
     if (user_dept == "agent") {
       output$page <- renderUI({
         # User Page ----
-        source('./ui/user/user_page.R', local = TRUE)$value
+        source('./ui/admin/admin_page.R', local = TRUE)$value
       })
     }
     
