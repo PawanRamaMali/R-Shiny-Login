@@ -9,10 +9,6 @@ gc(verbose=TRUE)
 library(shiny)
 library(bslib)
 
-# Modeling
-
-# Core
-
 #if (!require("DT")) install.packages('DT')
 
 
@@ -26,10 +22,16 @@ library(shinyanimate)
 library(shinyjs)
 library(shinyBS)
 
-
 ## Setting Upload Size 
 options(shiny.maxRequestSize=30*1024^2)
 options(shiny.error = traceback)
+
+
+
+
+# * Load functions ----
+source('functions/greetings.R')
+
 
 Logged = FALSE
 

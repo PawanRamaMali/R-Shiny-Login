@@ -1,9 +1,6 @@
 # * Load libraries ----
 source('global.R')
 
-# * Load functions ----
-source('functions/greetings.R')
-
 # * Load UI ----
 source('ui.R')
 
@@ -11,4 +8,7 @@ source('ui.R')
 source('server.R')
 
 # Run App ----
-shinyApp(ui = ui, server = server)
+app <- shinyApp(ui = ui, server = server)
+
+runApp(app)
+

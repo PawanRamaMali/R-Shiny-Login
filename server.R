@@ -80,7 +80,7 @@ server <- function(input, output, session) {
       if (user_dept == "agent") {
         output$page <- renderUI({
           # User Page ----
-          source('./components/user/user_page.R')
+          source('./components/user/user_page.R')$value
         })
       }
       
@@ -88,7 +88,7 @@ server <- function(input, output, session) {
       else if (user_dept == "admin") {
         output$page <- renderUI({
           # Admin Page ----
-          source('./components/admin/admin_page.R')
+          source('./components/admin/admin_page.R')$value
         })
       }
       
