@@ -1,6 +1,6 @@
 # Login Page ----
 login_page <- function() {
-  fluidPage(includeCSS("ui/style.css"),
+  fluidPage(includeCSS("style.css"),
             tagList(
               div(
                 id = "container",

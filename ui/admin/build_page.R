@@ -1,6 +1,6 @@
 ##  Tab Build New Test Case ----
 
-tabPanel("BUILD",
+tabPanel("Build",
          value = "Build",
          fluidPage
          (fluidRow(

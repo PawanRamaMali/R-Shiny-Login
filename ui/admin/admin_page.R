@@ -3,8 +3,8 @@ library(shinydashboard)
 Build <-
   source('./ui/admin/build_page.R', local = TRUE)
 
-Run <-
-  source('./ui/admin/run_page.R', local = TRUE)
+About <-
+  source('./ui/admin/about_page.R', local = TRUE)
 
 LogoutButton <- source('./functions/logout.R', local = TRUE)$value
 
@@ -48,13 +48,13 @@ fluidPage(
       id = "Front",
       
       
-      # Run Test Case ----
-      Run$value,
+      # Build Page ----
+      Build$value,
       
       
       
-      # Build New Test Case ----
-      Build$value
+      # About Page ----
+      About$value
       
       ,
       inputs = LogoutButton
