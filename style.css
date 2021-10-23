@@ -1,0 +1,1261 @@
+/*Primary Color #0c78b3  */
+
+
+
+
+/*Fonts that we may use in  the application*/
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./www/fonts/ubuntu/Ubuntu-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./www/fonts/ubuntu/Ubuntu-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./www/fonts/ubuntu/Ubuntu-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./www/fonts/ubuntu/Ubuntu-Bold.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./www/fonts/rubik/Rubik-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./www/fonts/rubik/Rubik-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./www/fonts/rubik/Rubik-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./www/fonts/rubik/Rubik-Bold.ttf') format('ttf');
+}
+
+.middle_container {
+  margin: auto;
+  width: 50%;
+}
+
+.busy_loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #808080;
+    width: 10px;
+    height: 10px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.loader,
+.loader:before,
+.loader:after {
+    background: #25275e;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+
+
+
+.loader {
+    color: #25275e;
+    text-indent: -9999em;
+    margin: 88px auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+/* spinner_text */
+#login_text {
+
+    color: #25275e; 
+
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* CheckExcludedTab */
+#Excluded_red_text {
+    color: red;
+    margin-left: 15px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Margin */
+.Margin {
+    margin-left: 15px;
+}
+
+.Margin_link_body {
+    margin-left: 50px;
+}
+
+/* Text */
+.Sidebar_text {
+  color: black;
+    margin-left: 15px;
+    word-wrap: break-word;
+}
+
+.Red_text {
+    color: red;
+    word-wrap: break-word;
+}
+
+.Sidebar_Red_text {
+    color: red;
+    margin-left: 15px;
+    word-wrap: break-word;
+}
+
+.footer {
+    position: fixed;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.footer_text{
+
+ display:inline-block;
+
+ margin-left: 30px;
+
+ }
+
+ .login_UN{
+
+ width: 280px;
+
+ }
+
+ .login_img{
+
+ width: 270px;
+
+ float: right;
+
+ height:230px
+
+ }
+
+/*The close button (x) in the header of the Modal ( Popup )*/
+.modal-header .close {
+    margin-top: 2px;
+}
+
+/*The title which is in the header of the Modal ( Popup )*/
+.modal-title {
+    color: #3f51b5;
+}
+
+/*The Label of each control, to change the font, the colors and the position */
+.control-label {
+    font-size: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .54);
+    margin-bottom: 12px;
+}
+
+/*The radio inline circle ( to check )*/
+.shiny-options-group .radio-inline {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/*The radio inline circle was not positioned correctly for the first child of each radio group ( shiny group)*/
+.radio-inline:first-child {
+    margin-right: 8px;
+}
+
+/*The radio span which contains the text*/
+.radio-inline span {
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+/*The radio inline size*/
+.radio-inline input[type="radio"] {
+    transform: scale(1.4) ;
+    cursor: pointer ;
+    -moz-transform: scale(1);
+}
+
+
+
+/*Radio inline color*/
+  .radio-inline input[type="radio"]:checked:after {
+    content: "";
+    border-color: #0c78b3 !important;
+      background: #0c78b3 !important;
+      height: 8px ;
+    width: 8px ;
+    position: absolute ;
+    border-radius: 50% ;
+    left: 46% ;
+    top: 46% ;
+    transform: translate(-45%, -45%);
+  }
+
+/*Radio inline color*/
+
+/*Radio inline color not checked*/
+  input[type="radio"]:before {
+    content: "";
+  border: 1px solid #757575;
+    height: 12.8px;
+    width: 12.8px;
+    border-radius: 50%;
+    position: absolute;
+    
+  }
+
+
+/*Radio inline color*/
+.form-group.shiny-input-container:after {
+    content: "";
+    width: 0;
+    border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 8px);
+    transition: .5s;
+}
+
+/*The upload file input control height*/
+.shiny-input-container .input-group input[type="text"] {
+    height: 30px;
+    padding-top: 6px;
+}
+
+/*app buttons*/
+.btn {
+    font-family: 'Ubuntu', sans-serif ;
+    height: 30px ;
+    text-transform: uppercase ;
+    padding: 3px 10px ;
+    background-color: #0c78b3 !important;
+    box-sizing: border-box;
+    color: white;
+    opacity:1 !important;
+}
+
+/*app buttons hover*/
+.btn:hover {
+    background-color: #fff !important;
+    border: 1px solid #0c78b3 ;
+    color: #0c78b3 !important;
+}
+
+
+.toolbar-button {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+ 
+.chooseInputOne{
+  width: 32%;
+  display:inline-block;
+  padding:9px 0px ;
+}
+
+.chooseInputSecond{
+  display:inline-block;
+  width: 20%;
+  position: absolute;
+  margin-top: 16px;
+  padding: 5px;
+}
+
+.chooseDateRange{
+  display:inline-block;
+  width:32%;
+  position: absolute;
+  margin-top: 4px;
+  padding: 5px;
+}
+
+.chooseRangeInput{
+  width: 32%;
+  display:inline-block;
+  padding:9px 0px;
+}
+
+
+/*irs control */
+.irs-line {
+    height: 3px;
+}
+
+.irs-line .irs-line-left,
+.irs-line .irs-line-mid,
+.irs-line .irs-line-right,
+.irs-bar,
+.irs-bar-edge {
+    height: 3px ;
+}
+
+.irs-grid {
+    top: 37px ;
+}
+
+.irs-grid-pol {
+    width: 1px;
+    height: 8px;
+    background: rgba(0, 0, 0, .54);
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.irs-grid-pol.small {
+    width: 1px;
+    height: 4px;
+    background: rgba(0, 0, 0, .54);
+    font-size: 100% ;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.irs-grid-text {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 10px;
+    line-height: 9px;
+    color: rgba(0, 0, 0, .54);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.irs-slider {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) ;
+    cursor: pointer ;
+    top: 21px ;
+    width: 12px ;
+    height: 12px ;
+    border: none ;
+    background: #0c78b3 ;
+    border-radius: 50% ;
+}
+
+.irs-slider:hover {
+    background: #0d47a1;
+}
+
+.irs-min, .modal-body .irs-max, .irs-single {
+    color: rgba(0, 0, 0, .54);
+    font-size: 12px ;
+    line-height: 16px ;
+    text-shadow: none ;
+    top: 0 ;
+    padding: 1px 4px ;
+    background: rgba(0, 0, 0, .08);
+    border-radius: 2px ;
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+.irs-single {
+    background: #0c78b3 !important;
+    color: #fff ;
+}
+
+/*Input control which isn't inline*/
+.shiny-input-container:not(.shiny-input-container-inline) {
+    width: 100%;
+}
+
+/*irs which is in an Input control which isn't inline*/
+.shiny-input-container:not(.shiny-input-container-inline) .irs-with-grid {
+    width: 90% !important;
+    margin: auto;
+}
+
+/* The main sidebar of the application */
+.main-sidebar {
+    background-color: #fff !important;
+    padding-top: 0px;
+}
+
+/*The radio inline control which is in the main sidebar*/
+.main-sidebar .radio-inline span {
+    color: #000 !important;
+}
+
+#Margin {
+    font-size: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .54);
+}
+
+/*The main sidebar*/
+#sidebarCollapsed {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(241, 241, 241) !important;
+}
+
+/*The login button in the initiate of the app*/
+#Login {   
+    height: 40px !important;
+    width: 100% !important;
+    background-color: #25275e !important;/*#ff7523 !important;*/
+    font-size: small;
+    /*font-style: inherit;*/
+    font-variant: common-ligatures;
+    font-weight: bold;
+}
+
+#Login:hover {
+  background-color: #fff !important;
+  border: 1px solid #25275e;
+  color: #25275e !important;
+}
+
+#Logout {
+  color: lightgray;
+  background-color: transparent !important;
+  display: inline-block;
+  padding: 16px 0px ;
+  margin-bottom: 0 ;
+  font-size: 14px ;
+  font-weight: 600 ;
+  line-height: 1.42857143 ;
+  text-align: center ;
+  white-space: nowrap ;
+  vertical-align: middle ;
+  cursor: pointer ;
+  background-image: none ;
+  border: none ;
+  outline: none ;
+  float:right;
+}
+
+#Logout:hover {
+  color: #ffffff !important;
+}
+
+/*The button of the file upload*/
+.input-group .btn-file {
+    margin-right: 1px !important;
+}
+
+/*The choose algorithms which we can reach from algorithms in the sidebar*/
+#ChooseAlgorithms, #ChooseAlgorithms.for.first.layer {
+    margin-top: 10px;
+}
+
+.handsontable{
+  overflow:hidden;
+}
+.handsontable tbody .htDimmed {
+    padding-top: 5px;  
+    height: 20px
+}
+
+.handsontable tbody .htAutocomplete {
+    padding-top: 5px;  
+    height: 20px
+}
+
+/*The choose algorithms table row hover*/
+.handsontable tbody tr:hover td {
+    background-color: RGBA(0, 0, 0, .075);
+}
+
+/*The Label of each control, to change the font, the colors and the position */
+/*For those input label that doesn't has a class*/
+.shiny-input-container label {
+    font-size: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .54);
+    margin-bottom: 12px;
+}
+
+.busy_loader {
+    left: 50%;
+    margin-left: 30%;
+    margin-top: 15px;
+    border: 26px solid #f3f3f3;
+    border-top: 26px solid #0c78b3;
+}
+
+/*The main header navbar which in the right side of import data*/
+.skin-blue .main-header .navbar {
+    background-color: #0c78b3 !important;
+}
+
+/*The main header navbar which contain import data*/
+.skin-blue .main-header .logo {
+    background-color: #0c78b3 !important;
+}
+
+#datafile_progress {
+    margin-top: 10px;
+}
+
+/*Other iris ( there are two types ) */
+.irs-bar {
+    border-top: 1px solid #0c78b3;
+    border-bottom: 1px solid #0c78b3;
+    background: #0c78b3;
+}
+
+.irs-bar-edge {
+    border: 1px solid #0c78b3;
+    background: #0c78b3;
+}
+
+.irs-from, .irs-to, .irs-single {
+    background: #0c78b3;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #003d61;
+}
+
+.sidebar-toggle {
+    visibility: hidden;
+}
+/*The sidebar menu in the left side which you can see after you've insert a data and algorithm and to go Data analysis*/
+
+#sidebarCollapsed .sidebar-menu li:not(.active) a {
+    color: #0c78b3;
+}
+
+#sidebarCollapsed .sidebar-menu li:not(.active):hover a {
+    color: white;
+}
+
+/*The clickable word and the sidebar like :Outliers Settings, Download*/
+.shiny-bound-input:not(.btn) {
+    color: black !important;
+}
+
+.modal-content{
+  border:none!important;
+}
+
+/*The gray line under the control on hover*/
+.modal-body .form-group.shiny-input-container:hover:after {
+    content: "";
+    width: 75%;
+    border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 8px);
+}
+
+.row{
+  margin:0;
+}
+
+/*.tab-content>.active{
+  position:sticky;
+}*/
+
+.navbar .navbar-header{
+  margin-top:-5px;
+}
+
+
+
+.form-control{
+  height:34px !important;
+}
+
+/*.selectize-input {
+  padding: 6px 12px !important;
+}*/
+
+.selectize-control{
+  margin-bottom:0px !important;
+}
+
+.prevDoubleArrow{
+  margin-left: 35px;
+  margin-top: -55px;
+  font-size: large;
+  border:none;
+  color: black !important;
+  background-color: white!important;
+  outline:none ;
+}
+
+.prevArrow{
+  margin-left:0px;
+  margin-top: -55px;
+  color: black !important;
+  font-size: large;
+  outline:none;
+  border:none;
+  background-color: white!important;
+}
+
+.nextArrow{
+  margin-top: -14px;
+  margin-left: 200px;
+  color: black !important;
+  font-size: large;
+  background-color: white!important;
+  border:none;
+  outline:none;
+}
+
+.nextDoubleArrow{
+  margin-top: -14px;
+  margin-left: 0px;
+  color: black !important;
+  font-size: large;
+  background-color: white!important;
+  border:none;
+  outline:none ;
+}
+
+.prevDoubleArrow .prevArrow .nextArrow .nextDoubleArrow :hover{
+  border:none;
+  outline:none;
+  color: black !important;
+  background-color: white!important;
+}
+
+.inputCols{
+  margin-left:110px;
+  margin-top: -74px;
+  margin-bottom:-35px;
+}
+
+.textCols{
+  margin-left:120px;
+  margin-top: -78px;
+}
+
+.errorMsg{
+    color: red;
+    text-align: center;
+    position: absolute;
+    width: inherit;
+    margin-top: -10px;
+}
+
+
+#Code_Bench_Save_Script_Button{
+  margin-top: 22px;
+  margin-left: -15px;
+}
+
+
+/*checkbox*/
+
+input[type="checkbox"]{
+  display:block;
+  margin:0.2em;
+  cursor:pointer;
+}
+
+
+input[type="checkbox"]:before{
+    content: "\2714";
+    border: 1px solid #0c78b3;
+    border-radius: 20%;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: bottom;
+    color: transparent;
+    margin-bottom: 5px;
+    font-size: 8px;
+    padding-left: 2px;
+}
+
+input[type="checkbox"]:checked:before {
+  background-color: #0c78b3 !important;
+  border-color:#0c78b3 !important;
+  color:#fff;
+}
+
+.container-fluid{
+  padding-left:0;
+  padding-right:0;
+}
+
+.navbar-default{  /*#0c78b3*/
+  background-color: #0c78b3 !important;
+  color:#0c78b3 !important;
+  position: relative;
+  width:100%;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: lightgray;
+}
+
+.navbar-default .navbar-nav>.active > a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+     color: white;
+    background-color: #164059;
+
+}
+
+.navbar .nav>li>a{
+  font-size: 14px;
+}
+
+.main-header{
+  display: none;
+}
+
+.wrapper{
+  top: -25px;
+}
+
+.sidebar{
+  padding-top:5px;
+}
+
+.content{
+  padding-top:5px;
+}
+
+
+.tab-content{
+  padding-top: 5px;
+}
+
+
+.loader-img {
+  width: 10%;
+}
+
+
+
+#modelRecipe{
+  margin-left: 0px ;
+}
+
+.colorExp{
+  float: right;
+  margin-top: -40px;
+}
+.textAnalysisColor{
+  margin-top: -32px;
+}
+
+.footer_text{
+  display:inline-block; 
+  margin-left: 30px;
+}
+.login_UN{
+  width: 280px;
+  padding-top:12px;
+}
+.login_img{
+  width: 270px; 
+  float: right;
+  height:230px
+}
+.mobScreenBtn{
+  padding:0; 
+  height:35px;
+}
+.mobTableBtnDownload{
+  padding:5.5px; 
+  height:35px ;
+  margin-top:10px;
+  margin-bottom: 20px ;
+  margin-right: 2px ;
+  display: none;
+}
+.mobTableBtnTransfer{
+  height:35px;
+  margin-bottom: 20px;
+  margin-top:10px;
+  margin-right: 2px;
+  display: none;
+}
+.mobTableBtnView{
+  height:35px ;
+  margin-bottom: 20px ;
+  margin-top:10px;
+  margin-right: 2px;
+  display: none;
+}
+.mobTableBtnPhrases{
+  height:35px;
+  margin-bottom: 20px;
+  margin-top:10px;
+  margin-right: 2px ;
+  display: none;
+}
+.smallScreenBtnContainer{
+  float: right;
+  margin-right: -15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.tableMultipleBtn{
+  display:flex;
+  float:right;
+  margin-top: -68px;
+  margin-bottom: -10px;
+}
+
+.autoLayout{
+  border:1px solid lightgray;
+  margin-top:14px;
+  height:575px;
+}
+
+.dup_detection{	
+  margin-top: 1px;	
+}
+
+.autoRow{
+  padding-left: 115px;
+  padding-top: 40px;
+}
+#topicModelling{
+  margin-top: 3px;
+}
+
+
+.formTitle{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .54);
+}
+.formInput{
+  top:-20px;
+}
+.setting_Pres_accuracy{
+  display:inline-block;
+  margin-top: -12px;
+}
+.display{
+  display: inline-block;
+}
+.sliderInput{
+  margin-left:15px;
+}
+.selectInput{
+  margin-top: -20px;
+  margin-right: -25px;
+}
+.prediction_setting{
+  top:-10px;
+  display: contents;
+}
+.colorPicker{
+  width: 135px;
+  margin-top: -20px;
+}
+.colorPickerLowerBC{
+  width: 135px;
+  margin-top: -15px;
+}
+.colorPickerLowerFC{
+  width: 135px;
+  margin-top: -25px;
+}
+.distribution_plot{
+  margin-left: 3%;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+}
+.distribution_plot:hover{
+  height: 570px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal-body {
+  overflow: auto;
+}
+/*Code bench layout start*/
+
+.condeBenchSpinner{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.codeBenchScriptDownload{
+  margin-top:2px;
+}
+.codeBenchScriptOutput{
+  margin-top:-18px;
+}
+.codeBenchDownloadLayout {
+   top: -2px;
+   margin-left: -16px;
+   display: flex;
+}
+.codeBenchDownloadFormatHeader{
+   width: 14rem;
+   display: inline-table;
+}
+.codeBenchRadioButton{
+   margin-top: -10px;
+   margin-left: 10px;
+   display: inline-table;
+}
+.codeBenchDownloadButton{
+  margin-right:-30px;
+  float:right;
+}
+#Code_Bench_Package_Status{
+  margin-top: -15px;
+}
+#Code_Bench_Python_Package_Status{
+  margin-top: -15px;
+}
+#Code_Bench_Selected_Language{
+    float: left;
+    margin-top: -20px;
+    color: green;
+}
+#Code_Bench_Submit_Data_Button{
+  margin-top: 33px;
+}
+.codeBenchSettingModel{
+  margin-left: -15px;
+}
+.codeBenchSettingModelDropdown{
+    margin-left: 12px;
+    margin-top: -20px;
+    width: 62%;
+}
+.codeBenchSettingModelSubmit{
+  float: right;
+  margin-right: -27px;
+  margin-top: 1px;
+}
+
+.codeBenchSettingModelDropdownR{
+
+    margin-top: -21px;
+
+}
+.codeBenchSettingModelSubmitLang{
+    float: right;
+    margin-right: -27px;
+}
+.codeBenchSettingModelDropdownPython{
+  margin-top: -21px;
+    
+}
+/*Code bench layout end*/
+/*media query for responsive device*/
+@media (min-width:0px) and (max-width: 767px) {
+  .autoLayout{
+      margin-bottom: 15px;
+  }
+}
+@media (min-width:0px) and (max-width: 810px) {
+  .reposive{
+    margin-left: -15px;
+    margin-top: -16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1260px) {
+  .smallScreenRecipe{
+    width: 250px;
+  }
+  .smallScreenBtn{
+    margin-left: 95px;
+    margin-right: 0px;
+    float: left;
+}
+  
+}
+@media (min-width: 320px) and (max-width: 490px) {
+  .codeBenchMobile{
+    margin-right: -14px;
+  }
+  .codeBenchDownloadLayout{
+    overflow: auto;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .smallScreenRecipe{
+    margin-right: -15px;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+   .smallScreenRecipe{
+    width: 250px;
+  }
+  .smallScreenBtn{
+    top:-56px;
+  }
+  .smallScreenBtnContainer{
+    margin-bottom: -36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 910px) {
+  .tableBtn{
+    margin-top: 65px;
+  }
+  .tableMultipleBtn{
+        float: left;
+    margin-top: -118px;
+  }
+}
+@media (min-width: 430px) and (max-width: 500px) {
+  .smallScreenBtnContainer {
+    float: initial;
+    display: flex;
+    padding-left: 35px;
+  }
+  .mobScreenBtn {
+    margin-right: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+@media (min-width: 310px) and (max-width: 500px) {
+  .login_img{
+        margin-top: -125px;
+        margin-right: -135px;
+  }
+.login_UN{
+  margin-top: 75px;
+    margin-left: -145px;
+    margin-right: 95px;
+    width: 280px;
+}
+.footer_text{
+  margin-left: 5px;
+}
+}
+@media (min-width: 100px) and (max-width: 310px) {
+.login_img{
+    width: 235px;
+    margin-top: -125px;
+    margin-right: -120px;
+  }
+.login_UN{
+  margin-top: 75px;
+    margin-left: -105px;
+    margin-right: 95px;
+    width: 215px;
+}
+}
+
+
+.informationMsg{
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 25%;
+}
+
+#colorText_placeholder {
+opacity:0.5;
+width: 100%;
+display: flex;
+align-content: center;
+justify-content: center;
+}
+
+.textAnalysisDiv{
+height:550px;
+overflow: hidden;
+width: 100%;
+}
+.textAnalysisDiv:hover{
+height:550px;
+overflow: auto;
+width: 100%;
+}
+
+table > thead > tr > th {
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+tbody > tr > td > span {
+    width: 72px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#bench{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 325px;
+    margin-left: 5px;
+    box-sizing: content-box;
+}
+#benchEnd{
+   border: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 325px;
+    margin-left: 5px;
+    margin-right: 32px;
+    box-sizing: content-box;
+}
+
+.benchStart{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 325px;
+    box-sizing: content-box;
+}
+
+.benchScroll{
+  height: 300px;
+  overflow: hidden;
+}
+.benchScroll:hover{
+  overflow-y: auto;
+  height: 300px;
+}
+.benchScrollFirst{
+  height: 220px;
+  overflow: hidden;
+}
+.benchScrollFirst:hover{
+  height: 220px;
+  overflow-y: auto;
+}
+
+
+.handsontable table.htCore{
+  width: max-content !important;
+}
+.view_table_scroll{
+  height: 705px;
+  overflow: hidden;
+}
+.view_table_scroll:hover{
+  height: 705px;
+  overflow: auto;
+}
+
+.panel{
+    padding: 5px;
+    margin: 5px;
+}
+
+.panel-primary{
+    padding: 5px;
+    margin: 5px;
+}
