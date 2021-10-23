@@ -30,11 +30,11 @@ options(shiny.error = traceback)
 
 
 # * Load functions ----
-source('./functions/greetings.R', local = TRUE)
-source('./functions/navbarPageWithInputs.R', local = TRUE)
+source('functions/greetings.R', local = TRUE)
+source('functions/navbarPageWithInputs.R', local = TRUE)
 # * Load Login UI ----
 
-source('./ui/login.R', local = TRUE)$value
+source('ui/login.R', local = TRUE)$value
 
 
 Logged = FALSE
