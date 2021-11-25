@@ -7,3 +7,12 @@ navbarPageWithInputs <- function(..., inputs) {
     navbar[[3]][[1]]$children[[1]], form)
   navbar
 }
+
+
+allThemes <- function ()
+{
+  themes <-
+    dir(system.file("shinythemes/css", package = "shinythemes"),
+        "*.min.css")
+  sub(".min.css", "", themes)
+}

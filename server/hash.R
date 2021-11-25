@@ -1,4 +1,3 @@
-
 find_hashed_output <- eventReactive(input$start_hash, {
   
   digest::digest(input$text_to_hash,

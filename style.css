@@ -1,217 +1,49 @@
-/* # css for login Page */
 
-body {
-  font-family:"Verdana", Georgia,Serif;
-  background-color:white
-  
+#navbar {
+  background-color:#990000;
+  position:fixed;  
+  z-index:1; 
 }
-
-
-#container{
-       display: flex;
-       justify-content: center;
-       margin-top: 150px;
-       }
-
-#login {
-       font-size:14px; 
-       width: 360px;}
-
-#well {
-        padding: 50px;
-        background: white;
-        border: 1px;
-        box-shadow: ;
-        overflow-y: ;
-        width:100%;
-        height:100%;
-  
+.navbar-form {
+  margin:0px;
 }
-
-h2, h3{
-        color: #525252;}
-
-
-#userName, #passwd{
-        box-shadow: none;
-        outline:none;
-        border: none;
-        padding-left: 0;
-        border-bottom: 2px solid #446e9b;
-        border-radius: 0;
-   }
-
-#userName:focus, #passwd:focus{
-        box-shadow: 0px 10px 10px -5px lightgray;
-        }
-
-#Login{
-             outline: none;
-             margin-left: 0px;
-             width: 100px;
-             font-size: 12pt;
-             background: transparent;
-             border: 2px solid #446e9b;
-             color: #446e9b;
-             border-radius: 10px;
-             transition: 0.8s ease-in-out;
-             }
-             #Login:hover{
-             background: #446e9b;
-             color: white;}
-
-
-@-webkit-keyframes fadeOut {
-                  from {
-                      opacity: 1;
-                  }
-                  to {
-                      opacity: 0;
-                  }
-              }
-@keyframes fadeOut {
-                  from {
-                      opacity: 1;
-                  }
-                  to {
-                      opacity: 0;
-                  }
-              }
-              
-#error-box {
-             margin-top: 20px;
-             padding: 5px 10px 5px 10px;
-             text-align: center;
-             
-             color: white;
-             background: #ef3b2c;
-             border: 1px solid #ef3b2c;
-             border-radius: 5px;
-             -webkit-animation: fadeOut;
-             animation: fadeOut;
-             opacity: 0;
-             animation-duration: 15s;}
-             
-             
-/* # css for Admin Page */                      
-
-
-
-
-/*Primary Color #0c78b3  */
-
-
-
-#Logout {
-  color: lightgray;
-  background-color: transparent !important;
-  display: inline-block;
-  padding: 16px 0px ;
-  margin-bottom: 0 ;
-  font-size: 14px ;
-  font-weight: 600 ;
-  line-height: 1.42857143 ;
-  text-align: center ;
-  white-space: nowrap ;
-  vertical-align: middle ;
-  cursor: pointer ;
-  background-image: none ;
-  border: none ;
-  outline: none ;
-  float:right;
-}
-
-#Logout:hover {
-  color: #ffffff !important;
-}
-
-/*The button of the file upload*/
-.input-group .btn-file {
-    margin-right: 1px !important;
-}
-
-
-
-/*The main header navbar which in the right side of import data*/
-.skin-blue .main-header .navbar {
-    background-color: #0c78b3 !important;
-}
-
-/*The main header navbar which contain import data*/
-.skin-blue .main-header .logo {
-    background-color: #0c78b3 !important;
-}
-
-.sidebar-toggle {
-    visibility: hidden;
-}
-
 
 .navbar .navbar-header{
   margin-top:-5px;
 }
 
-
-.form-control{
-  height:34px !important;
-}
-
-
-.selectize-control{
-  margin-bottom:0px !important;
-}
-
-
-
 .navbar-default{  
-  background-color: #0c78b3 !important;
-  color:#0c78b3 !important;
   position: relative;
   width:100%;
 }
 
-.navbar-default .navbar-nav>li>a{
-  color: lightgray;
+.logout-action-button {
+ padding: 8px;
+ z-index:3000;
+ float: right;
+ margin-right: 100px;
 }
 
-.navbar-default .navbar-nav>.active > a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-     color: white;
-    background-color: #164059;
-
-}
-
-.navbar .nav>li>a{
-  font-size: 14px;
-}
-
-.main-header{
-  display: none;
-}
-
-.wrapper{
-  top: -25px;
-}
-
-.sidebar{
-  padding-top:5px;
-}
-
-.content{
-  padding-top:5px;
+#logout-button {
+  position: fixed;
+  z-index: 3000;
+  margin-top: 15px;
 }
 
 
-.tab-content{
-  padding-top: 5px;
-}
+#Logout {
 
 
-.panel{
-    padding: 5px;
-    margin: 5px;
-}
+display: inline-block;
+padding: 16px 0px ;
+margin-bottom: 0 ;
 
-.panel-primary{
-    padding: 5px;
-    margin: 5px;
+text-align: left ;
+white-space: nowrap ;
+vertical-align: middle ;
+cursor: pointer ;
+background-image: none ;
+border: none ;
+outline: none ;
+float:right;
 }

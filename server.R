@@ -1,10 +1,10 @@
 server <- function(input, output, session) {
   
-  # * Login Functionality ----
-  source('./srv/login.R', local = TRUE)
-  
+  #* Login Functionality ----
+  source('./server/login.R', local = TRUE)
+
   # * Hashing Functionality ----
-  source('./srv/hash.R', local = TRUE)
+  source('./server/hash.R', local = TRUE)
   
   
 }

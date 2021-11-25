@@ -22,22 +22,22 @@ library(shinyanimate)
 library(shinyjs)
 library(shinyBS)
 
+
+library(dplyr)
+library(glue)
+
 ## Setting Upload Size 
 options(shiny.maxRequestSize=30*1024^2)
 options(shiny.error = traceback)
-
+Logged = FALSE
 
 
 
 # * Load functions ----
-source('functions/greetings.R', local = TRUE)
 source('functions/navbarPageWithInputs.R', local = TRUE)
-# * Load Login UI ----
-
-source('ui/login.R', local = TRUE)$value
+source('functions/login_functions.R', local = TRUE)$value
 
 
-Logged = FALSE
 
-# LOAD DATASETS ----
+
 

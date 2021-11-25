@@ -26,8 +26,7 @@ good_time <- function() {
 
 
 process_data <- function(data) {
-  
-  if (is.null(data)){
+  if (is.null(data)) {
     return(NULL)
   }
   
@@ -117,8 +116,6 @@ process_data <- function(data) {
 
 
 
-gm= tags$h3(strong("Good Morning",style="color:#446e9b"))
-ga= tags$h3(strong("Good Afternoon",style="color:#446e9b"))
-ge= tags$h3(strong("Good Evening",style="color:#446e9b"))
-
-
+gm = tags$h3(strong("Good Morning", style = "color:#446e9b"))
+ga = tags$h3(strong("Good Afternoon", style = "color:#446e9b"))
+ge = tags$h3(strong("Good Evening", style = "color:#446e9b"))
